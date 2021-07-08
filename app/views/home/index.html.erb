@@ -1,0 +1,6 @@
+<% name = current_user.present? ? current_user.name : 'Stranger' %>
+
+<h1>Welcome, <%= name %></h1>
+<p>Find me in app/views/home/index.html.erb</p>
+<%= link_to 'Edit Profile', edit_user_registration_path %>
+<button type="button" class="btn btn-primary ml-auto">Add Project</button>
